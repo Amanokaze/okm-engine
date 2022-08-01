@@ -1,0 +1,12 @@
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    text-align: center;
+}
+
+.table-left-align {
+    text-align: left;
+}

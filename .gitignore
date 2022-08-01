@@ -1,0 +1,9 @@
+__pycache__/
+.scannerwork/
+manager/__pycache__/
+manager/*.log
+manager/*.xlsx
+manager/*.sql
+okm_venv/
+result/
+*.bat
