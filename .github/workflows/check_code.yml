@@ -9,7 +9,6 @@ jobs:
       run: pip install -r requirements.txt
     - name: Run ESLint
       run: pylint engin/*.py
-
   viewer-check:
     runs-on: ubuntu-latest
     needs: engine-check
