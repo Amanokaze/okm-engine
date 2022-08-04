@@ -1,3 +1,4 @@
-window.onload = function () {
-  init_datatables(); // undefined function
-};
+module.exports = () => {
+  const hello = 'Hello, world'
+  return hello
+}
