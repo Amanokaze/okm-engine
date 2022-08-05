@@ -7,6 +7,6 @@ manager/*.sql
 okm_venv/
 result/
 *.bat
-viewer/package-lock.json
-viewer/node_modules/
+package-lock.json
+node_modules/
 .mypy_cache/
