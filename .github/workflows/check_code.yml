@@ -1,17 +1,17 @@
 name: Check the JavaScript source code in the viewer
 on: [push]
 jobs:
-  # engine-check:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: Install modules
-  #     run: pip install -r requirements.txt
-  #   - name: Run PyLint
-  #     run: pylint engine/*.py
+  engine-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: pip install -r requirements.txt
+    - name: Run PyLint
+      run: pylint engine/*.py
   viewer-check:
     runs-on: ubuntu-latest
-    needs: engine-check
+    # needs: engine-check
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
