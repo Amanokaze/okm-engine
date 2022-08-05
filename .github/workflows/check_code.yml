@@ -8,4 +8,4 @@ jobs:
     - name: Install modules
       run: pip install -r requirements.txt
     - name: Run PyLint
-      run: pylint engine/*.py
+      run: pylint *.py
