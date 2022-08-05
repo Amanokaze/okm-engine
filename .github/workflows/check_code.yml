@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      run: cd viewer; npm i
+      run: cd viewer; yarn
     - name: Run ESLint
-      run: npx eslint . --ext .js,.jsx,.ts,.tsx
+      run: ./node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx
