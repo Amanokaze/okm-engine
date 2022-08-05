@@ -1,7 +1,7 @@
-name: Check the JavaScript source code in the viewer
+name: Check the Python source code in the engine
 on: [push]
 jobs:
-  engine-check:
+  code-check:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -9,12 +9,3 @@ jobs:
       run: pip install -r requirements.txt
     - name: Run PyLint
       run: pylint engine/*.py
-  viewer-check:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
-    - name: Run ESLint
-      run: ./node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx
-    # needs: engine-check
