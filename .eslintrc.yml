@@ -9,5 +9,6 @@ parserOptions:
   sourceType: module
 rules: {
   semi: [2, "never"],
-  quotes: ["off", "single"]
+  quotes: ["off", "single"],
+  linebreak-style: 0
 }
