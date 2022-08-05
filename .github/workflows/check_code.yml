@@ -7,5 +7,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: pip install -r requirements.txt
-    - name: Run PyLint
-      run: pylint *.py
+    - name: Run MyPy
+      run: mypy .
